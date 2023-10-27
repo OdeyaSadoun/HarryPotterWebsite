@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter</title>
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="logo1 col-auto">
+            <img src="images/hp_logo.jpg" alt="logo" />
+          </div>
+          <nav id="nav_open" class="d-lg-flex col ps-4">
+            <ul class="list-inline pt-2">
+              <li class="home list-inline-item pt-2">
+                <a href="index.html">
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                  Home</a
+                >
+              </li>
+              <li class="list-inline-item p-2">
+                <a href="about.html">
+                  <i class="fa fa-info-circle" aria-hidden="true"></i> About</a
+                >
+              </li>
+              <li class="list-inline-item p-2">
+                <a href="gallery.html">
+                  <i class="fa fa-camera" aria-hidden="true"></i>
+                  Gallery</a
+                >
+              </li>
+              <li class="list-inline-item p-2">
+                <a href="faq.html">
+                  <i class="fa fa-gamepad" aria-hidden="true"></i>
+                  Trivia</a
+                >
+              </li>
+              <li class="list-inline-item p-2">
+                <a href="faq.html">
+                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  F.A.Q</a
+                >
+              </li>
+              <li class="list-inline-item p-2">
+                <a href="contact.html">
+                  <i class="fa fa-comments" aria-hidden="true"></i>
+                  Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="logo2">
+            <img src="images/logo.png" alt="logo" />
+          </div>
+          <div
+            id="burger_btn"
+            class="burger d-flex justify-content-end d-lg-none d-sm-inlineblock"
+          >
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- strip- carousel -->
+    <div
+      class="strip slider-section slide-hide-on-mobile container-fluid bg-warning p-0 d-md-block d-none"
+    >
+      <!-- carousel start -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="false"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div
+              class="bg_pic"
+              style="background-image: url(images/strip1.jpg)"
+            ></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Harry Potter</h5>
+              <p>A boy who grew up to be a hero, despite it all.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="bg_pic"
+              style="background-image: url(images/strip2.jpg)"
+            ></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Golden Trio</h5>
+              <p>
+                Three friends who faced the Dark Lord and saved the wizarding
+                world.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div
+              class="bg_pic"
+              style="background-image: url(images/strip3.jpg)"
+            ></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Great Hall</h5>
+              <p>A feast for the eyes, where the ceiling comes alive.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div
+              class="bg_pic"
+              style="background-image: url(images/strip4.jpg)"
+            ></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hogwarts Castle</h5>
+              <p>A labyrinthine fortress of secrets and mysteries.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- carousel end -->
+    </div>
+    <!-- main -->
+    <main class="container-fluid">
+      <div class="container p-5">
+        <div class="row justify-content-between">
+          <article class="box article1 col-lg-8 mt-4">
+            <div class="box_in">
+              <h1 class="title_hp">
+                Harry Potter Saga 
+                <i class="fa fa-magic" aria-hidden="true"></i>
+              </h1>
+              <p class="text-white lead p-3">
+                The Harry Potter series is a series of seven fantasy novels
+                written by British author J. K. Rowling. The novels chronicle
+                the lives of a young wizard, Harry Potter, and his friends
+                Hermione Granger and Ron Weasley, all of whom are students at
+                Hogwarts School of Witchcraft and Wizardry. The main story arc
+                concerns Harry's struggle against Lord Voldemort, a dark wizard
+                who intends to become immortal, overthrow the wizard governing
+                body known as the Ministry of Magic and subjugate all wizards
+                and Muggles (non-magical people). The novels introduce many
+                elements of a classic fantasy world, including wizards, witches,
+                goblins, trolls, and other magical creatures. The world is also
+                home to a variety of magical objects, such as wands,
+                broomsticks, and potions.
+              </p>
+            </div>
+          </article>
+          <aside class="box border border-danger col-lg-3 mt-4">
+            <div class="box_in">
+              <p class="text-white lead p-5">
+                Are you a Harry Potter fan? Come to the Harry Potter Studios in
+                London and experience the magic for yourself. Tickets are on
+                sale now! #HarryPotter #London #Magic
+              </p>
+            </div>
+          </aside>
+          <article class="box article2 col-lg-8 mt-5">
+            <div class="box_in">
+              <h2 class="title_hp">Magical Universe Conquers</h2>
+              <p class="text-white lead p-3">
+                The Harry Potter series has been translated into 80 languages
+                and has sold more than 500 million copies worldwide, making it
+                the best-selling book series in history. The series has also
+                been adapted into a series of eight films, which have grossed
+                over $7.7 billion at the worldwide box office. The Harry Potter
+                series has been praised for its complex characters, its
+                imaginative world-building, and its themes of good versus evil,
+                friendship, and the power of love. The Harry Potter series is a
+                cultural phenomenon that has captured the imaginations of
+                readers and viewers of all ages. The series is a timeless
+                classic that will continue to be enjoyed by generations to come.
+              </p>
+            </div>
+          </article>
+          <aside class="box aside2 border border-danger col-lg-3 mt-5">
+            <div class="box_in">
+              <p class="text-white lead p-2">
+                Escape to the wizarding world of <span class="sub_title_hp">Harry Potter</span>
+                <br>
+                Books available
+                now!
+              </p>
+              <button class="btn btn-success ">Buy now!</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="burger.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

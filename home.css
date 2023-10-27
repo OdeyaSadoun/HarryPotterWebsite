@@ -1,0 +1,15 @@
+header nav .home a {
+    color: goldenrod;
+  }
+  
+  header nav li .fa-home {
+    color: goldenrod;
+  }
+
+  header nav .home a:hover {
+    color: white;
+  }
+  
+  header nav li .fa-home:hover {
+    color: white;
+  }

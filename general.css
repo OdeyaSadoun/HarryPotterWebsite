@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+/* header */
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 42, 78, 1) 0%,
+    rgba(84, 109, 131, 1) 100%
+  );
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  max-height: 100px;
+  background: #002a4e;
+  position: sticky;
+  top: 0;
+  z-index: 400;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: goldenrod;
+}
+
+header nav li .fa {
+  color: white;
+  font-size: 1.2em;
+}
+nav li .fa.fa-camera {
+  font-size: 1em;
+}
+
+header nav li i:hover {
+  color: goldenrod;
+}
+
+header .logo1 img {
+  max-height: 90px;
+}
+
+header .logo2 img {
+  max-height: 100px;
+}
+
+header .burger {
+  display: none;
+}
+
+/* strip */
+.bg_pic {
+  min-height: 650px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* עושה שלטקסט יהיה רקע מושחר שקוף */
+.carousel-item .carousel-caption {
+  background: rgba(0, 0, 0, 0.705);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* main */
+main .row .article2 {
+  order: 1;
+}
+
+main .row p {
+  font-size: 1.6em;
+}
+main .title_hp {
+  font-family: "Harry Potter", sans-serif;
+  color: goldenrod;
+  font-size: 3.5em;
+}
+
+main .sub_title_hp {
+    font-family: "Harry Potter", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+  }
+
+
+main .aside2 {
+  background-image: url(images/books9.jpg);
+  background-size: cover;
+  border-radius: 3%;
+  box-shadow: 0px 0px 30px 5px #000000;
+  height: inherit;
+}
+
+main .aside2 p{
+    background: linear-gradient(0deg, rgba(164, 255, 181, 0.877) 0%, rgba(105,187,137,1) 100%);
+    margin: 10px;
+    border-radius: 3%;
+font-size: 1.5em;
+font-weight: bolder;
+}
+.aside2 .box_in {
+    background: rgb(0, 0, 0);
+    height: 60%;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 3%;
+  }
+
+
+@media (max-width: 992px) {
+  header nav ul {
+    display: grid;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    background: #b5cfe69f;
+    right: 0;
+    top: 100px;
+  }
+  header .search {
+    display: none;
+  }
+
+  header nav ul li a {
+    display: block;
+    color: #002a4e;
+  }
+  header nav ul li {
+    padding: 8px;
+  }
+
+  header nav ul a:hover {
+    background: rgba(0, 0, 0, 0.411);
+    padding: 8px;
+  }
+  header .burger {
+    z-index: 888;
+    color: #ffffff;
+  }
+  header .burger i {
+    /* מגדיל את האייקון של הבורגר */
+    font-size: 2.5em;
+  }
+  header .logo1 {
+    display: none;
+  }
+  main .row .article2 {
+    order: 0;
+  }
+}
