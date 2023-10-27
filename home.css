@@ -1,15 +1,95 @@
 header nav .home a {
-    color: goldenrod;
-  }
-  
-  header nav li .fa-home {
-    color: goldenrod;
-  }
+  color: goldenrod;
+}
 
-  header nav .home a:hover {
-    color: white;
+header nav li .fa-home {
+  color: goldenrod;
+}
+
+header nav .home a:hover {
+  color: white;
+}
+
+header nav li .fa-home:hover {
+  color: white;
+}
+
+/* strip */
+.bg_pic {
+  min-height: 650px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* עושה שלטקסט יהיה רקע מושחר שקוף */
+.carousel-item .carousel-caption {
+  background: rgba(0, 0, 0, 0.705);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* main */
+main .row .article2 {
+  order: 1;
+}
+
+main .row p {
+  font-size: 1.6em;
+  text-align: justify;
+}
+main .title_hp {
+  font-family: "Harry Potter", sans-serif;
+  color:  #F8CE69;
+  font-size: 3.5em;
+}
+
+main .sub_title_hp {
+  font-family: "Harry Potter", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+}
+
+main aside {
+  border-radius: 3%;
+  box-shadow: 0px 0px 30px 5px #000000;
+  height: inherit;
+}
+main article a{
+    text-decoration: none;
+}
+
+
+main .aside1 {
+  background-image: url(images/aside2.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+main .aside2 {
+    background: linear-gradient(0deg, rgba(179,252,83,1) 0%, rgba(37,132,0,1) 100%);
+}
+
+main .aside2 img{
+    width:  70%;
+}
+
+main .aside2 p {
+  margin: 10px 10px 20px 10px;
+  border-radius: 3%;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+@media (max-width: 992px) {
+  main .row .article2 {
+    order: 0;
   }
-  
-  header nav li .fa-home:hover {
-    color: white;
+  .strip_img{
+    background-image: url(images/strip1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
   }
+}
+
