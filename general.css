@@ -112,8 +112,16 @@ font-weight: bolder;
     padding: 10px;
     margin-top: 20px;
     border-radius: 3%;
+    display: flex;
+    flex-direction: column;
   }
 
+  .center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 
 @media (max-width: 992px) {
   header nav ul {
