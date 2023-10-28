@@ -1,0 +1,15 @@
+header nav .gallery a {
+    color: goldenrod;
+  }
+  
+  header nav li .fa-camera {
+    color: goldenrod;
+  }
+  
+  header nav .gallery a:hover {
+    color: white;
+  }
+  
+  header nav li .fa-camera:hover {
+    color: white;
+  }

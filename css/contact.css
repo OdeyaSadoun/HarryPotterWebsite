@@ -1,0 +1,15 @@
+header nav .contact a {
+    color: goldenrod;
+  }
+  
+  header nav li .fa-comments {
+    color: goldenrod;
+  }
+  
+  header nav .contact a:hover {
+    color: white;
+  }
+  
+  header nav li .fa-comments:hover {
+    color: white;
+  }

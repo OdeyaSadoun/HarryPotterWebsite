@@ -1,0 +1,16 @@
+header nav .about a {
+    color: goldenrod;
+  }
+  
+  header nav li .fa-info-circle {
+    color: goldenrod;
+  }
+  
+  header nav .about a:hover {
+    color: white;
+  }
+  
+  header nav li .fa-info-circle:hover {
+    color: white;
+  }
+  

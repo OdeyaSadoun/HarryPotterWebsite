@@ -1,0 +1,15 @@
+header nav .faq a {
+    color: goldenrod;
+  }
+  
+  header nav li .fa-question-circle {
+    color: goldenrod;
+  }
+  
+  header nav .faq a:hover {
+    color: white;
+  }
+  
+  header nav li .fa-question-circle:hover {
+    color: white;
+  }

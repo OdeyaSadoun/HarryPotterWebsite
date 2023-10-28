@@ -1,0 +1,15 @@
+header nav .trivia a {
+    color: goldenrod;
+  }
+  
+  header nav li .fa-gamepad {
+    color: goldenrod;
+  }
+  
+  header nav .trivia a:hover {
+    color: white;
+  }
+  
+  header nav li .fa-gamepad:hover {
+    color: white;
+  }
