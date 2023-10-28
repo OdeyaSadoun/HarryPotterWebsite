@@ -60,7 +60,7 @@ main article a{
 
 
 main .aside1 {
-  background-image: url(images/aside2.jpg);
+  background-image: url(../images/aside2.jpg);
   background-size: cover;
   background-position: center;
 
@@ -86,7 +86,7 @@ main .aside2 p {
     order: 0;
   }
   .strip_img{
-    background-image: url(images/strip1.jpg);
+    background-image: url(../images/strip1.jpg);
     background-size: cover;
     background-position: center;
     height: 300px;
