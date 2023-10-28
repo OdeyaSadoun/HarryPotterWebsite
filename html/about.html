@@ -99,32 +99,109 @@
 
     <main class="container-fluid">
       <div class="container">
-        <div class="row">
-          <div class="row1 d-flex row justify-content-between">
-            <div class="img1 col-lg-3 col-md-5 border border-warning p-2 m-3">
-              <img src="../images/harry.jpg" alt="about Harry Potter">
+        <div class="row center">
+          <div class="row1 d-flex row justify-content-around">
+            <div class="img1 col-lg-3 col-md-2 p-2 mx-3 d-flex center">
+              <img src="../images/harry.jpg" alt="about Harry Potter" />
             </div>
-            <div class="about1 col-lg-8 col-md-5 border border-warning p-5 m-3">
-              about harry
+            <div class="about1 col-lg-8 col-md-8 p-5 pe-md-0 m-3 mx-md-0">
+              <p class="text_justify text-white lead px-3 mt-0">
+                <span class="title_hp">Harry Potter</span> is the protagonist of
+                J.K. Rowling's Harry Potter series. He is an orphan who is
+                raised by his cruel relatives, the Dursleys. On his eleventh
+                birthday, Harry learns that he is a wizard and has been accepted
+                to Hogwarts School of Witchcraft and Wizardry.
+              </p>
+              <p class="text_justify text-white lead px-3 mb-0">
+                At Hogwarts, Harry makes friends with Ron Weasley and Hermione
+                Granger. He also learns that his parents were murdered by the
+                dark wizard Lord Voldemort when he was just a baby. Harry
+                becomes a target of Voldemort, but he also becomes a powerful
+                wizard in his own right.
+              </p>
+              <button class="button_read_more" onclick="onClickReadMore(1)">
+                <p id="button_text1">READ MORE</p>
+              </button>
+              <div class="text_justify text-white lead p-3" id="read_more1" hidden>
+                Over the course of the series, Harry faces many challenges,
+                including Voldemort's attempts to kill him. He also learns about
+                his own past and his connection to Voldemort. In the end, Harry
+                defeats Voldemort and saves the wizarding world. Harry is a
+                complex and well-developed character. He is brave, loyal, and
+                determined. He is also flawed, making mistakes and learning from
+                them. Harry is a relatable character who has inspired readers of
+                all ages.
+              </div>
             </div>
           </div>
-          <div class="row2 d-flex row justify-content-between">
-            <div class="img2 col-lg-3 col-md-5 border border-warning p-2 m-3">
-              <img src="../images/harry.jpg" alt="about Harry Potter">
+          <div class="row2 d-flex row justify-content-around">
+            <div class="img2 col-lg-3 col-md-2 p-2 mx-3 d-flex center">
+              <img src="../images/hermayoni.jpg" alt="about Harry Potter" />
             </div>
-            <div class="about2 col-lg-8 col-md-5 border border-warning p-5 m-3">
-              about harry
+            <div class="about2 col-lg-8 col-md-8 p-5 ps-md-0 m-3 mx-md-0">
+              <p class="text_justify text-white lead px-3 mt-0">
+                <span class="title_hp">Hermione Granger</span> is one of the
+                main characters in J.K. Rowling's Harry Potter series. She is a
+                Muggle-born witch who was raised in the muggle world. On her
+                eleventh birthday, Hermione learns that she is a witch and has
+                been accepted to Hogwarts School of Witchcraft and Wizardry.
+              </p>
+              <p class="text_justify text-white lead px-3 mb-0">
+                At Hogwarts, Hermione quickly proves to be a brilliant student.
+                She is a top student in her class and is known for her
+                intelligence and academic skills. Hermione is also a loyal and
+                supportive friend to Harry and Ron.
+              </p>
+              <button class="button_read_more" onclick="onClickReadMore(2)">
+                <p id="button_text2">READ MORE</p>
+              </button>
+              <div class="text_justify text-white lead p-3" id="read_more2" hidden>
+                Over the course of the series, Hermione faces many challenges,
+                including Voldemort's attempts to take over the wizarding world.
+                She is also a target of Voldemort's followers, but she always
+                manages to escape. Hermione is a powerful witch who is willing
+                to fight for what she believes in. Hermione is a complex and
+                well-developed character. She is intelligent, brave, and loyal.
+                She is also flawed, making mistakes and learning from them.
+                Hermione is a relatable character who has inspired readers of
+                all ages.
+              </div>
             </div>
           </div>
-          <div class="row3 d-flex row justify-content-between">
-            <div class="img3 col-lg-3 col-md-5 border border-warning p-2 m-3">
-              <img src="../images/harry.jpg" alt="about Harry Potter">
+          <div class="row3 d-flex row justify-content-around">
+            <div class="img3 col-lg-3 col-md-2 p-2 mx-3 d-flex center">
+              <img src="../images/ron.jpg" alt="about Harry Potter" />
             </div>
-            <div class="about3 col-lg-8 col-md-5 border border-warning p-5 m-3">
-              about harry
+            <div class="about3 col-lg-8 col-md-8 p-5 pe-md-0 m-3 mx-md-0">
+              <p class="text_justify text-white lead px-3 mt-0">
+                <span class="title_hp">Ron Weasley</span> is one of the main
+                characters in J.K. Rowling's Harry Potter series. He is a member
+                of the Weasley family, a large, poor family of wizards. Ron is a
+                loyal and supportive friend to Harry and Hermione, and he is
+                always there for them, even when things are tough.
+              </p>
+              <p class="text_justify text-white lead px-3 mb-0">
+                At Hogwarts, Ron is a good student, but he is not as naturally
+                talented as Harry or Hermione. He is also prone to making
+                mistakes, which can sometimes lead to trouble. However, Ron is
+                always willing to learn and grow, and he is a valuable member of
+                the trio.
+              </p>
+              <button class="button_read_more" onclick="onClickReadMore(3)">
+                <p id="button_text3">READ MORE</p>
+              </button>
+              <div class="text_justify text-white lead p-3 " id="read_more3" hidden>
+                Over the course of the series, Ron faces many challenges,
+                including Voldemort's attempts to take over the wizarding world.
+                He is also a target of Voldemort's followers, but he always
+                manages to escape. Ron is a brave and loyal friend who is always
+                willing to fight for what he believes in. Ron is a complex and
+                well-developed character. He is loyal, brave, and funny. He is
+                also flawed, making mistakes and learning from them. Ron is a
+                relatable character who has inspired readers of all ages.
+              </div>
             </div>
           </div>
-          
         </div>
       </div>
     </main>
@@ -158,6 +235,7 @@
     </footer>
     <script src="../js/burger.js"></script>
     <script src="../js/general.js"></script>
+    <script src="../js/about.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

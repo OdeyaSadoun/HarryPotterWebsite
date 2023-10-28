@@ -21,15 +21,26 @@ header nav .about a {
   main .row .row2 .img2{
     order: 1;
   }
+
+  main .title_hp {
+    font-family: "Harry Potter", sans-serif;
+    color:  #F8CE69;
+    font-size: 1.5em;
+  }
+  main .row .text_justify {
+    text-align: justify;
+  }
+
   @media (max-width: 992px) {
     main .row img{
       width: 250px;
     }
+    main .row p {
+      font-size: medium;
+    }
+
   }
   @media (max-width: 769px) {
-    main .row img{
-      width: 200px;
-    }
     main .row .row2 .img2{
       order: 0;
     }
