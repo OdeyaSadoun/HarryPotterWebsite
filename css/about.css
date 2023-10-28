@@ -1,47 +1,67 @@
 header nav .about a {
-    color: goldenrod;
-  }
-  
-  header nav li .fa-info-circle {
-    color: goldenrod;
-  }
-  
-  header nav .about a:hover {
-    color: white;
-  }
-  
-  header nav li .fa-info-circle:hover {
-    color: white;
-  }
+  color: goldenrod;
+}
 
-  main .row img{
-    width: 300px;
-    border-radius: 50%;
-  }
-  main .row .row2 .img2{
-    order: 1;
-  }
+header nav li .fa-info-circle {
+  color: goldenrod;
+}
 
-  main .title_hp {
-    font-family: "Harry Potter", sans-serif;
-    color:  #F8CE69;
-    font-size: 1.5em;
+header nav .about a:hover {
+  color: white;
+}
+
+header nav li .fa-info-circle:hover {
+  color: white;
+}
+
+main .row img {
+  width: 300px;
+  border-radius: 50%;
+}
+main .row .row2 .img2 {
+  order: 1;
+}
+
+main .title_hp {
+  font-family: "Harry Potter", sans-serif;
+  color: #f8ce69;
+  font-size: 1.5em;
+}
+
+main h1 {
+  font-family: "Lilita One", sans-serif;
+  color: #002a4e;
+  font-size: 4em;
+}
+
+main .row .text_justify {
+  text-align: justify;
+}
+
+/* main .button_read_more{
+    background: goldenrod;
+    border-radius: 12%;
+  } */
+main button {
+  background-color: #f8ce69;
+  border: 2px solid goldenrod;
+  border-radius: 60px;
+  color: rgb(104, 76, 4);
+  width: 150px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 992px) {
+  main .row img {
+    width: 250px;
   }
   main .row .text_justify {
-    text-align: justify;
+    font-size: medium;
   }
-
-  @media (max-width: 992px) {
-    main .row img{
-      width: 250px;
-    }
-    main .row p {
-      font-size: medium;
-    }
-
+}
+@media (max-width: 769px) {
+  main .row .row2 .img2 {
+    order: 0;
   }
-  @media (max-width: 769px) {
-    main .row .row2 .img2{
-      order: 0;
-    }
-  }
+}
