@@ -13,4 +13,24 @@ header nav .about a {
   header nav li .fa-info-circle:hover {
     color: white;
   }
-  
+
+  main .row img{
+    width: 300px;
+    border-radius: 50%;
+  }
+  main .row .row2 .img2{
+    order: 1;
+  }
+  @media (max-width: 992px) {
+    main .row img{
+      width: 250px;
+    }
+  }
+  @media (max-width: 769px) {
+    main .row img{
+      width: 200px;
+    }
+    main .row .row2 .img2{
+      order: 0;
+    }
+  }
