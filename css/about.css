@@ -14,10 +14,22 @@ header nav li .fa-info-circle:hover {
   color: white;
 }
 
+main h1 {
+  font-family: "Lilita One", sans-serif;
+  color: #002a4e;
+  font-size: 4em;
+}
+
 main .row img {
   width: 300px;
   border-radius: 50%;
+  transition: 1000ms;
 }
+
+main .row img:hover {
+  transform: scale(1.5, 1.5);
+}
+
 main .row .row2 .img2 {
   order: 1;
 }
@@ -28,20 +40,11 @@ main .title_hp {
   font-size: 1.5em;
 }
 
-main h1 {
-  font-family: "Lilita One", sans-serif;
-  color: #002a4e;
-  font-size: 4em;
-}
 
 main .row .text_justify {
   text-align: justify;
 }
 
-/* main .button_read_more{
-    background: goldenrod;
-    border-radius: 12%;
-  } */
 main button {
   background-color: #f8ce69;
   border: 2px solid goldenrod;
@@ -50,6 +53,10 @@ main button {
   width: 150px;
   height: 50px;
   margin-bottom: 15px;
+  transition: 1000ms;
+}
+main button:hover {
+  transform: scale(1.2, 1.2);
 }
 
 @media (max-width: 992px) {

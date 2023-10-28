@@ -13,3 +13,29 @@ header nav .contact a {
   header nav li .fa-comments:hover {
     color: white;
   }
+  main h1 {
+    font-family: "Lilita One", sans-serif;
+    color: #002a4e;
+    font-size: 3em;
+  }
+
+  main .form_container{
+    max-width: 60%;
+    margin: 25px auto;
+    
+  }
+
+
+  main button {
+    background-color: #f8ce69;
+    border: 2px solid goldenrod;
+    border-radius: 60px;
+    color: rgb(104, 76, 4);
+    width: 150px;
+    height: 50px;
+    margin-bottom: 15px;
+    transition: 1000ms;
+  }
+  main button:hover {
+    transform: scale(1.2, 1.2);
+  }

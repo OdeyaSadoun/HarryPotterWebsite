@@ -85,6 +85,9 @@ main .aside2 p {
   main .row .article2 {
     order: 0;
   }
+  main .row p {
+    font-size: 1.2em;
+  }
   .strip_img{
     background-image: url(../images/strip1.jpg);
     background-size: cover;
