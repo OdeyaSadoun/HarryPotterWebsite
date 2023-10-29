@@ -18,18 +18,26 @@ main h1 {
   color: #002a4e;
   font-size: 3em;
 }
+
 main .row .left_gadget img,
 main .row .right_gadget img,
 main .row .buttom_gadget img {
   width: 130px;
   transform: 1000ms;
 }
+
 main .row .left_gadget img:hover {
 transform: rotate(45deg);
 }
+
 main .row .right_gadget img:hover{
   transform: rotate(-45deg);
 }
+
+main .row .buttom_gadget img:hover{
+  transform: scale(1.2,1.2);
+}
+
 main .form_container {
   max-width: 60%;
   margin: 25px auto;
@@ -45,9 +53,11 @@ main button {
   margin-bottom: 15px;
   transition: 1000ms;
 }
+
 main button:hover {
   transform: scale(1.2, 1.2);
 }
+
 @media (min-width: 992px) {
   main .row .buttom_gadget img {
     display: none;
