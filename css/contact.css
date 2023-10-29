@@ -46,6 +46,7 @@ main .row .buttom_gadget img:hover {
 
 main .form_container {
   margin: 25px auto;
+  background: #ffffff9c;
 }
 
 main .contact_container {
@@ -56,25 +57,29 @@ main .contact_container {
 main .left_side {
   background: linear-gradient(
     0deg,
-    rgba(255, 167, 119, 1) 0%,
-    rgba(164, 28, 12, 1) 100%
+    rgba(0, 84, 156, 1) 0%,
+    rgba(0, 5, 10, 1) 100%
   );
+
   border-radius: 15px;
   font-size: 1.2em;
 }
 
-main .left_side img{
+main .left_side img {
   max-width: 25%;
   border-radius: 15px;
-  box-shadow:0px 0px 33px 10px #460a0a ;
-
+  box-shadow: 0px 0px 33px 10px #ffffff;
 }
 
 main button {
-  background-color: #f8ce69;
-  border: 2px solid goldenrod;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 84, 156, 1) 0%,
+    rgba(0, 5, 10, 1) 100%
+  );
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 60px;
-  color: rgb(104, 76, 4);
+  color: rgb(255, 255, 255);
   width: 150px;
   height: 50px;
   margin-bottom: 15px;

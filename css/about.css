@@ -44,22 +44,32 @@ main .row .text_justify {
   text-align: justify;
 }
 
+
 main button {
   background: linear-gradient(
     0deg,
     rgba(255, 167, 119, 1) 0%,
     rgba(164, 28, 12, 1) 100%
   );
-  border: 2px solid goldenrod;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 60px;
   color: rgb(255, 255, 255);
   width: 150px;
   height: 50px;
-  margin-bottom: 15px;
+  padding: 10px;
   transition: 1000ms;
 }
 main button:hover {
   transform: scale(1.2, 1.2);
+}
+
+main .btn{
+  padding: 5px 40px;
+  background: #f8ce69;
+}
+main .btn:hover{
+
+  background: goldenrod;
 }
 
 @media (max-width: 992px) {
