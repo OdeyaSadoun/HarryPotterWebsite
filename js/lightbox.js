@@ -1,16 +1,7 @@
-//  ספרייה שצריך לחבר בסוף באדי
-// כל תמונה שנרצה שתעבוד עם הלייט בוקס חובה להוסיף לה את האטרביוט
-// data-img 
-// לדוגמא: המלל מגיע מהאלט
-//   <img data-img src="series/private.jpg" alt="very good movie" >
-
-
 const lightBox_init = function () {
   createLightBoxHtml();
   declareEvents();
 }
-
-
 
 // מייצר את הטמל של הקוד של לייט בוקס בבאדי
 const createLightBoxHtml = function () {
@@ -24,8 +15,6 @@ const createLightBoxHtml = function () {
   </div>
   `
 }
-
-
 
 const declareEvents = function () {
   // דיבור עם הכפתור סגירה בלייט בוקס
