@@ -34,9 +34,9 @@
       rel="stylesheet"
     />
     <link
-    href="https://fonts.googleapis.com/css2?family=Courgette&family=Lilita+One&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/general.css" />
@@ -100,101 +100,158 @@
         </div>
       </div>
     </header>
-<main class="container-fluid">
-  <div class="container quiz-container">
-    <h2>Harry Potter Quiz</h2>
+    <main class="container-fluid">
+      <div class="container quiz-container">
+        <h2>Harry Potter Quiz</h2>
 
-    <div id="question1">
-      <p>Question 1: What is the name of the Hogwarts house known for its bravery and chivalry?</p>
-      <label>
-        <input type="radio" name="q1" value="incorrect"> Ravenclaw
-      </label>
-      <label>
-        <input type="radio" name="q1" value="incorrect"> Slytherin
-      </label>
-      <label>
-        <input type="radio" name="q1" value="incorrect"> Hufflepuff
-      </label>
-      <label>
-        <input type="radio" name="q1" value="correct"> Gryffindor
-      </label>
-      <button onclick="showQuestion(2)">Next</button>
-    </div>
+        <!-- question num1 -->
+        <div class="d-flex flex-wrap" id="question1">
+          <p>
+            What is the name of the Hogwarts house known for its bravery and
+            chivalry?
+          </p>
+          <div class="form-check col-lg-6 btn btn-secondary">
+            <input class="form-check-input" type="radio" name="q1" value="incorrect" id="q1a">
+            <label class="form-check-label" for="q1a">
+              Ravenclaw
+            </label>
+          </div>
+          <div class="form-check col-lg-6 btn btn-secondary">
+            <input class="form-check-input" type="radio" name="q1" value="incorrect" id="q1b">
+            <label class="form-check-label" for="q1b">
+              Slytherin
+            </label>
+          </div>
+          <div class="form-check col-lg-6 btn btn-secondary">
+            <input class="form-check-input" type="radio" name="q1" value="incorrect" id="q1c">
+            <label class="form-check-label" for="q1c">
+              Hufflepuff
+            </label>
+          </div>
+          <div class="form-check col-lg-6 btn btn-secondary">
+            <input class="form-check-input" type="radio" name="q1" value="correct" id="q1d">
+            <label class="form-check-label" for="q1d">
+              Gryffindor
+            </label>
+          </div>
+  
+          <button onclick="showQuestion(2)">Next Question</button>
+        </div>
 
-    <div id="question2" style="display: none;">
-      <p>Question 2: What is the spell used for the Patronus Charm?</p>
-      <label>
-        <input type="radio" name="q2" value="incorrect"> Accio
-      </label>
-      <label>
-        <input type="radio" name="q2" value="correct"> Expecto Patronum
-      </label>
-      <label>
-        <input type="radio" name="q2" value="incorrect"> Expelliarmus
-      </label>
-      <label>
-        <input type="radio" name="q2" value="incorrect"> Wingardium Leviosa
-      </label>
-      <button onclick="showQuestion(3)">Next</button>
-    </div>
-
-    <div id="question3" style="display: none;">
-      <p>Question 3: Who is the Half-Blood Prince in the Harry Potter series?</p>
-      <label>
-        <input type="radio" name="q3" value="correct"> Severus Snape
-      </label>
-      <label>
-        <input type="radio" name="q3" value="incorrect"> Albus Dumbledore
-      </label>
-      <label>
-        <input type="radio" name="q3" value="incorrect"> Rubeus Hagrid
-      </label>
-      <label>
-        <input type="radio" name="q3" value="incorrect"> Remus Lupin
-      </label>
-      <button onclick="showQuestion(4)">Next</button>
-    </div>
-
-    <div id="question4" style="display: none;">
-      <p>Question 4: What is the name of Hagrid's giant pet spider?</p>
-      <label>
-        <input type="radio" name="q4" value="incorrect"> Nagini
-      </label>
-      <label>
-        <input type="radio" name="q4" value="correct"> Aragog
-      </label>
-      <label>
-        <input type="radio" name="q4" value="incorrect"> Buckbeak
-      </label>
-      <label>
-        <input type="radio" name="q4" value="incorrect"> Fluffy
-      </label>
-      <button onclick="showQuestion(5)">Next</button>
-    </div>
-
-    <div id="question5" style="display: none;">
-      <p>Question 5: Who is the author of the "Fantastic Beasts and Where to Find Them" book?</p>
-      <label>
-        <input type="radio" name="q5" value="incorrect"> Albus Dumbledore
-      </label>
-      <label>
-        <input type="radio" name="q5" value="incorrect"> Gellert Grindelwald
-      </label>
-      <label>
-        <input type="radio" name="q5" value="correct"> Newt Scamander
-      </label>
-      <label>
-        <input type="radio" name="q5" value="incorrect"> Rita Skeeter
-      </label>
-      <button onclick="calculateScore()">Submit</button>
-    </div>
-  </div>
-
-  <div id="results" class="mt-4"></div>
-  <button id="resetButton" style="display: none;" onclick="resetQuiz()">Reset</button>
+        <!-- question num 2 -->
+        <div id="question2" style="display: none">
+          <p>
+            What is the spell used for the Patronus Charm?
+          </p>
+          <div class="form- btn btn-secondary">
+            <input class="form-check-input" type="radio" name="q1" value="incorrect" id="q1a">
+            <label class="form-check-label" for="q1a">
+              Accio
+            </label>
+          </div>
+          <div class="form-check btn btn-secondary">
+            <input class="form-check-input" type="radio" name="q1" value="correct" id="q1a">
+            <label class="form-check-label" for="q1a">
+              Expecto Patronum
+            </label>
+          </div>
+          <div class="form-check btn btn-secondary">
+            <input class="form-check-input" type="radio" name="q1" value="incorrect" id="q1a">
+            <label class="form-check-label" for="q1a">
+              Expelliarmus
+            </label>
+          </div>
+          <div class="form-check btn btn-secondary">
+            <input class="form-check-input" type="radio" name="q1" value="incorrect" id="q1a">
+            <label class="form-check-label" for="q1a">
+              Wingardium
+            </label>
+          </div>
+  
+          <button onclick="showQuestion(3)">Next Question</button>
+        </div>
 
 
-</main>
+        <div id="question2" style="display: none">
+          <p>What is the spell used for the Patronus Charm?</p>
+          <label>
+            <input type="radio" name="q2" value="incorrect" /> Accio
+          </label>
+          <label>
+            <input type="radio" name="q2" value="correct" /> Expecto Patronum
+          </label>
+          <label>
+            <input type="radio" name="q2" value="incorrect" /> Expelliarmus
+          </label>
+          <label>
+            <input type="radio" name="q2" value="incorrect" /> Wingardium
+            Leviosa
+          </label>
+          <button onclick="showQuestion(3)">Next Question</button>
+        </div>
+
+        <!-- question num 3 -->
+        <div id="question3" style="display: none">
+          <p>Who is the Half-Blood Prince in the Harry Potter series?</p>
+          <label>
+            <input type="radio" name="q3" value="correct" /> Severus Snape
+          </label>
+          <label>
+            <input type="radio" name="q3" value="incorrect" /> Albus Dumbledore
+          </label>
+          <label>
+            <input type="radio" name="q3" value="incorrect" /> Rubeus Hagrid
+          </label>
+          <label>
+            <input type="radio" name="q3" value="incorrect" /> Remus Lupin
+          </label>
+          <button onclick="showQuestion(4)">Next Question</button>
+        </div>
+
+        <!-- question num 4 -->
+        <div id="question4" style="display: none">
+          <p>What is the name of Hagrid's giant pet spider?</p>
+          <label>
+            <input type="radio" name="q4" value="incorrect" /> Nagini
+          </label>
+          <label>
+            <input type="radio" name="q4" value="correct" /> Aragog
+          </label>
+          <label>
+            <input type="radio" name="q4" value="incorrect" /> Buckbeak
+          </label>
+          <label>
+            <input type="radio" name="q4" value="incorrect" /> Fluffy
+          </label>
+          <button onclick="showQuestion(5)">Next Question</button>
+        </div>
+
+        <!-- question num 5 -->
+        <div id="question5" style="display: none">
+          <p>
+            Who is the author of the "Fantastic Beasts and Where to Find Them"
+            book?
+          </p>
+          <label>
+            <input type="radio" name="q5" value="incorrect" /> Albus Dumbledore
+          </label>
+          <label>
+            <input type="radio" name="q5" value="incorrect" /> Gellert
+            Grindelwald
+          </label>
+          <label>
+            <input type="radio" name="q5" value="correct" /> Newt Scamander
+          </label>
+          <label>
+            <input type="radio" name="q5" value="incorrect" /> Rita Skeeter
+          </label>
+          <button onclick="calculateScore()">Submit</button>
+        </div>
+      </div>
+
+      <div id="results" class="mt-4"></div>
+      <button id="resetButton" hidden onclick="resetQuiz()">Reset</button>
+    </main>
     <footer class="container-fluid">
       <div class="container">
         <p class="center p-4 mb-0">Created by Odeya Sadoun | 2023</p>

@@ -22,3 +22,14 @@ header nav .trivia a {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
+  input[type="radio"] {
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  input[type="radio"]:hover {
+    background-color: lightgray;
+  }
