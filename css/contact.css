@@ -22,8 +22,14 @@ main .row .left_gadget img,
 main .row .right_gadget img,
 main .row .buttom_gadget img {
   width: 130px;
+  transform: 1000ms;
 }
-
+main .row .left_gadget img:hover {
+transform: rotate(45deg);
+}
+main .row .right_gadget img:hover{
+  transform: rotate(-45deg);
+}
 main .form_container {
   max-width: 60%;
   margin: 25px auto;
