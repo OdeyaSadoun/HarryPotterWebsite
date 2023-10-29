@@ -13,15 +13,65 @@ header nav .trivia a {
   header nav li .fa-gamepad:hover {
     color: white;
   }
-
+  main h1 {
+    font-family: "Lilita One", sans-serif;
+    color: #002a4e;
+    font-size: 3em;
+  }
+  
   .quiz-container {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
+    margin: 25px auto;
+    background: #ffffff9c;
+
+    max-width: 800px;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
+  main .contact_container {
+    max-width: 80%;
+    min-height: 530px;
+    margin: 25px auto;
+  }
+  main .left_side {
+    background-image: url(../images/gallery5.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    font-size: 1.2em;
+  }
+  main p{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #002a4e;
+    margin: 25px;
+
+  }
+  
+main button {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 84, 156, 1) 0%,
+    rgba(0, 5, 10, 1) 100%
+  );
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 60px;
+  color: rgb(255, 255, 255);
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  transition: 1000ms;
+}
+main button:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/*   
+  main .left_side img {
+    max-width: 25%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 33px 10px #ffffff;
+  } */
   input[type="radio"] {
     appearance: none;
     border: 1px solid black;

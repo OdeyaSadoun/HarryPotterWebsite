@@ -102,11 +102,278 @@
     </header>
     <main class="container-fluid">
       <div class="container p-3">
-        <h1>American Questions Test</h1>
-        <div id="question"></div>
-        <div id="answers"></div>
-        <div id="score">Score: <span id="scoreValue">0</span></div>
-        <button id="next">Next</button>    
+        <h1 class="center m-2 pt-3">Harry Potter Quiz</h1>
+        <div class="contact_container d-flex justify-content-center">
+          <div data-aos="fade-down" class="container quiz-container center flex-column
+          ">
+            <!-- question num1 -->
+            <div
+              class="center"
+              id="question1"
+              style="display: flex; flex-direction: column"
+            >
+              <p>
+                What is the name of the Hogwarts house known for its bravery and
+                chivalry?
+              </p>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1"
+                  value="incorrect"
+                  id="q1a"
+                />
+                <label class="form-check-label" for="q1a"> Ravenclaw </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1"
+                  value="incorrect"
+                  id="q1b"
+                />
+                <label class="form-check-label" for="q1b"> Slytherin </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1"
+                  value="incorrect"
+                  id="q1c"
+                />
+                <label class="form-check-label" for="q1c"> Hufflepuff </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q1"
+                  value="correct"
+                  id="q1d"
+                />
+                <label class="form-check-label" for="q1d"> Gryffindor </label>
+              </div>
+
+              <button onclick="showQuestion(2)">Next Question</button>
+            </div>
+
+            <!-- question num 2 -->
+            <div class="center" id="question2" style="display: none">
+              <p>What is the spell used for the Patronus Charm?</p>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2"
+                  value="incorrect"
+                  id="q2a"
+                />
+                <label class="form-check-label" for="q2a"> Accio </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2"
+                  value="correct"
+                  id="q2b"
+                />
+                <label class="form-check-label" for="q2b">
+                  Expecto Patronum
+                </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2"
+                  value="incorrect"
+                  id="q2c"
+                />
+                <label class="form-check-label" for="q2c"> Expelliarmus </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q2"
+                  value="incorrect"
+                  id="q2d"
+                />
+                <label class="form-check-label" for="q2d"> Wingardium </label>
+              </div>
+
+              <button onclick="showQuestion(3)">Next Question</button>
+            </div>
+
+            <!-- question num 3 -->
+            <div class="center" id="question3" style="display: none">
+              <p>Who is the Half-Blood Prince in the Harry Potter series?</p>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3"
+                  value="correct"
+                  id="q3a"
+                />
+                <label class="form-check-label" for="q3a">
+                  Severus Snape
+                </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3"
+                  value="incorrect"
+                  id="q3b"
+                />
+                <label class="form-check-label" for="q3b">
+                  Albus Dumbledore
+                </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3"
+                  value="incorrect"
+                  id="q3c"
+                />
+                <label class="form-check-label" for="q3c">
+                  Rubeus Hagrid
+                </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q3"
+                  value="incorrect"
+                  id="q3d"
+                />
+                <label class="form-check-label" for="q3d"> Remus Lupin </label>
+              </div>
+
+              <button onclick="showQuestion(4)">Next Question</button>
+            </div>
+
+            <!-- question num 4 -->
+            <div class="center" id="question4" style="display: none">
+              <p>What is the name of Hagrid's giant pet spider?</p>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q4"
+                  value="incorrect"
+                  id="q4a"
+                />
+                <label class="form-check-label" for="q4a"> Nagini </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q4"
+                  value="correct"
+                  id="q4b"
+                />
+                <label class="form-check-label" for="q4b"> Aragog </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q4"
+                  value="incorrect"
+                  id="q4c"
+                />
+                <label class="form-check-label" for="q4c"> Buckbeak </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q4"
+                  value="incorrect"
+                  id="q4d"
+                />
+                <label class="form-check-label" for="q4d"> Fluffy </label>
+              </div>
+
+              <button onclick="showQuestion(5)">Next Question</button>
+            </div>
+
+            <!-- question num 5 -->
+            <div class="center" id="question5" style="display: none">
+              <p>
+                Who is the author of the "Fantastic Beasts and Where to Find
+                Them" book?
+              </p>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q5"
+                  value="incorrect"
+                  id="q5a"
+                />
+                <label class="form-check-label" for="q5a">
+                  Albus Dumbledore
+                </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q5"
+                  value="incorrect"
+                  id="q5b"
+                />
+                <label class="form-check-label" for="q5b"> Gellert </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q5"
+                  value="correct"
+                  id="q5c"
+                />
+                <label class="form-check-label" for="q5c">
+                  Newt Scamander
+                </label>
+              </div>
+              <div class="form-check col-lg-6 btn btn-secondary">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="q5"
+                  value="incorrect"
+                  id="q5d"
+                />
+                <label class="form-check-label" for="q5d"> Rita Skeeter </label>
+              </div>
+
+              <button id="last-button-on-quiz" onclick="calculateScore()">Submit</button>
+            </div>
+
+            <div id="results" class="mt-4"></div>
+            <button id="resetButton" hidden onclick="location.reload()">Reset</button>
+          </div>
+
+          <!-- the right side -->
+          <div
+            data-aos="fade-up" id="left_side"
+            class="left_side col-lg-6 my-4 text-white center flex-column"
+          >
+          </div>
+        </div>
       </div>
     </main>
     <footer class="container-fluid">
