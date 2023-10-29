@@ -64,6 +64,15 @@ main .row .buttom_gadget img:hover {
   transform: scale(1.2, 1.2);
 }
 
+.accordion-button::after{
+  background-image: url(../images/lightning2.png);
+  background-size: cover;
+
+}
+.accordion-button:not(.collapsed)::after{
+  background-image: url(../images/lightning.png);
+}
+
 @media (min-width: 992px) {
   main .row .buttom_gadget img {
     display: none;
