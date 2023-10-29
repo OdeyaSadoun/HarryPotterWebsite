@@ -100,7 +100,101 @@
         </div>
       </div>
     </header>
+<main class="container-fluid">
+  <div class="container quiz-container">
+    <h2>Harry Potter Quiz</h2>
 
+    <div id="question1">
+      <p>Question 1: What is the name of the Hogwarts house known for its bravery and chivalry?</p>
+      <label>
+        <input type="radio" name="q1" value="incorrect"> Ravenclaw
+      </label>
+      <label>
+        <input type="radio" name="q1" value="incorrect"> Slytherin
+      </label>
+      <label>
+        <input type="radio" name="q1" value="incorrect"> Hufflepuff
+      </label>
+      <label>
+        <input type="radio" name="q1" value="correct"> Gryffindor
+      </label>
+      <button onclick="showQuestion(2)">Next</button>
+    </div>
+
+    <div id="question2" style="display: none;">
+      <p>Question 2: What is the spell used for the Patronus Charm?</p>
+      <label>
+        <input type="radio" name="q2" value="incorrect"> Accio
+      </label>
+      <label>
+        <input type="radio" name="q2" value="correct"> Expecto Patronum
+      </label>
+      <label>
+        <input type="radio" name="q2" value="incorrect"> Expelliarmus
+      </label>
+      <label>
+        <input type="radio" name="q2" value="incorrect"> Wingardium Leviosa
+      </label>
+      <button onclick="showQuestion(3)">Next</button>
+    </div>
+
+    <div id="question3" style="display: none;">
+      <p>Question 3: Who is the Half-Blood Prince in the Harry Potter series?</p>
+      <label>
+        <input type="radio" name="q3" value="correct"> Severus Snape
+      </label>
+      <label>
+        <input type="radio" name="q3" value="incorrect"> Albus Dumbledore
+      </label>
+      <label>
+        <input type="radio" name="q3" value="incorrect"> Rubeus Hagrid
+      </label>
+      <label>
+        <input type="radio" name="q3" value="incorrect"> Remus Lupin
+      </label>
+      <button onclick="showQuestion(4)">Next</button>
+    </div>
+
+    <div id="question4" style="display: none;">
+      <p>Question 4: What is the name of Hagrid's giant pet spider?</p>
+      <label>
+        <input type="radio" name="q4" value="incorrect"> Nagini
+      </label>
+      <label>
+        <input type="radio" name="q4" value="correct"> Aragog
+      </label>
+      <label>
+        <input type="radio" name="q4" value="incorrect"> Buckbeak
+      </label>
+      <label>
+        <input type="radio" name="q4" value="incorrect"> Fluffy
+      </label>
+      <button onclick="showQuestion(5)">Next</button>
+    </div>
+
+    <div id="question5" style="display: none;">
+      <p>Question 5: Who is the author of the "Fantastic Beasts and Where to Find Them" book?</p>
+      <label>
+        <input type="radio" name="q5" value="incorrect"> Albus Dumbledore
+      </label>
+      <label>
+        <input type="radio" name="q5" value="incorrect"> Gellert Grindelwald
+      </label>
+      <label>
+        <input type="radio" name="q5" value="correct"> Newt Scamander
+      </label>
+      <label>
+        <input type="radio" name="q5" value="incorrect"> Rita Skeeter
+      </label>
+      <button onclick="calculateScore()">Submit</button>
+    </div>
+  </div>
+
+  <div id="results" class="mt-4"></div>
+  <button id="resetButton" style="display: none;" onclick="resetQuiz()">Reset</button>
+
+
+</main>
     <footer class="container-fluid">
       <div class="container">
         <p class="center p-4 mb-0">Created by Odeya Sadoun | 2023</p>
@@ -130,6 +224,7 @@
     </footer>
     <script src="../js/burger.js"></script>
     <script src="../js/general.js"></script>
+    <script src="../js/trivia.js"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
