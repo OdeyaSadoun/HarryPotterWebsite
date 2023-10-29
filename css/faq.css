@@ -31,8 +31,14 @@ main .row .buttom_gadget img {
 main .row .left_gadget img:hover {
   transform: rotate(45deg);
 }
+main .accordion .accordion-item{
+  background: linear-gradient(
+    0deg,
+    rgba(0, 42, 78, 1) 0%,
+    rgba(84, 109, 131, 1) 100%
+  );}
 main .accordion .accordion-collapse.collapse.show{
-  background: #ffffff;
+  background: #ffffff52;
 }
 main .accordion .accordion-button.collapsed{
 
