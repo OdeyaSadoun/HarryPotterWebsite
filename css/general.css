@@ -17,6 +17,7 @@ body {
     rgba(84, 109, 131, 1) 100%
   );
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 header {

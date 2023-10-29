@@ -8,7 +8,7 @@ const createLightBoxHtml = function () {
   document.body.innerHTML += `
   <div id="light_box" class="light_box">
   <div class="inside_box">
-    <img src="images/paypal.png" >
+    <img src="../images/gallery1.jpg" >
     <p>bal bal bal on the picture....</p>
     <button>close</button>
   </div>
