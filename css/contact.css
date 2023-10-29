@@ -71,6 +71,6 @@ main button:hover {
   }
   main .row .left_gadget ,
   main .row .right_gadget  {
-    max-height: 1cap;
+    max-height: 10px;
   }
 }
