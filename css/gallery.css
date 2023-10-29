@@ -1,15 +1,41 @@
 header nav .gallery a {
-    color: goldenrod;
-  }
-  
-  header nav li .fa-camera {
-    color: goldenrod;
-  }
-  
-  header nav .gallery a:hover {
-    color: white;
-  }
-  
-  header nav li .fa-camera:hover {
-    color: white;
-  }
+  color: goldenrod;
+}
+
+header nav li .fa-camera {
+  color: goldenrod;
+}
+
+header nav .gallery a:hover {
+  color: white;
+}
+
+header nav li .fa-camera:hover {
+  color: white;
+}
+main h1 {
+  font-family: "Lilita One", sans-serif;
+  color: #002a4e;
+  font-size: 3em;
+}
+main h2 {
+  font-family: "Lilita One", sans-serif;
+  color: #ffffff;
+  font-size: 2em;
+}
+main .images{
+  width: 70%;
+  margin: 30px auto;
+}
+main .images img {
+  max-width: 220px;
+}
+
+main .books .img_books {
+  min-height: 200px;
+  width: 90%;
+  margin: 20px auto;
+  background-image: url(../images/books13.jpg);
+  background-size: cover;
+  background-position: center;
+}
