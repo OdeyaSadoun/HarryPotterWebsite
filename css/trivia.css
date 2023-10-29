@@ -1,53 +1,52 @@
 header nav .trivia a {
-    color: goldenrod;
-  }
-  
-  header nav li .fa-gamepad {
-    color: goldenrod;
-  }
-  
-  header nav .trivia a:hover {
-    color: white;
-  }
-  
-  header nav li .fa-gamepad:hover {
-    color: white;
-  }
-  main h1 {
-    font-family: "Lilita One", sans-serif;
-    color: #002a4e;
-    font-size: 3em;
-  }
-  
-  .quiz-container {
-    margin: 25px auto;
-    background: #ffffff9c;
+  color: goldenrod;
+}
 
-    max-width: 800px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  main .contact_container {
-    max-width: 80%;
-    min-height: 530px;
-    margin: 25px auto;
-  }
-  main .left_side {
-    background-image: url(../images/gallery5.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px;
-    font-size: 1.2em;
-  }
-  main p{
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #002a4e;
-    margin: 25px;
+header nav li .fa-gamepad {
+  color: goldenrod;
+}
 
-  }
-  
+header nav .trivia a:hover {
+  color: white;
+}
+
+header nav li .fa-gamepad:hover {
+  color: white;
+}
+main h1 {
+  font-family: "Lilita One", sans-serif;
+  color: #002a4e;
+  font-size: 3em;
+}
+
+.quiz-container {
+  margin: 25px auto;
+  background: #ffffff9c;
+
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+main .contact_container {
+  max-width: 80%;
+  min-height: 530px;
+  margin: 25px auto;
+}
+main .left_side {
+  background-image: url(../images/gallery5.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  font-size: 1.2em;
+}
+main p {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #002a4e;
+  margin: 25px;
+}
+
 main button {
   background: linear-gradient(
     0deg,
@@ -72,14 +71,21 @@ main button:hover {
     border-radius: 15px;
     box-shadow: 0px 0px 33px 10px #ffffff;
   } */
-  input[type="radio"] {
-    appearance: none;
-    border: 1px solid black;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-  }
-  input[type="radio"]:hover {
-    background-color: lightgray;
-  }
+input[type="radio"] {
+  appearance: none;
+  border: none;
+  /* border-radius: 50%; */
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+}
+input[type="radio"]:checked {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+input[type="radio"]:checked + label {
+  background-color: #002a4e;
+}
