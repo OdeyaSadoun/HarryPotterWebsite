@@ -33,10 +33,6 @@ main .row .buttom_gadget img:hover {
   transform: scale(1.2, 1.2);
 }
 
-main button:hover {
-  transform: scale(1.2, 1.2);
-}
-
 @media (min-width: 992px) {
   main .row .buttom_gadget img {
     display: none;

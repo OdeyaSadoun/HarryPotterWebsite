@@ -19,6 +19,12 @@ main h1 {
   font-size: 3em;
 }
 
+main h2 {
+  font-family: "Lilita One", sans-serif;
+  color: white;
+  font-size: 3em;
+}
+
 main .row .left_gadget img,
 main .row .right_gadget img,
 main .row .buttom_gadget img {
@@ -27,20 +33,34 @@ main .row .buttom_gadget img {
 }
 
 main .row .left_gadget img:hover {
-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-main .row .right_gadget img:hover{
+main .row .right_gadget img:hover {
   transform: rotate(-45deg);
 }
 
-main .row .buttom_gadget img:hover{
-  transform: scale(1.2,1.2);
+main .row .buttom_gadget img:hover {
+  transform: scale(1.2, 1.2);
 }
 
 main .form_container {
-  max-width: 60%;
   margin: 25px auto;
+}
+
+main .contact_container {
+  max-width: 80%;
+  margin: 25px auto;
+}
+
+main .left_side {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 167, 119, 1) 0%,
+    rgba(164, 28, 12, 1) 100%
+  );
+  border-radius: 15px;
+  font-size: 1.2em;
 }
 
 main button {
@@ -69,8 +89,11 @@ main button:hover {
   main .row .right_gadget img {
     display: none;
   }
-  main .row .left_gadget ,
-  main .row .right_gadget  {
+  main .row .left_gadget,
+  main .row .right_gadget {
     max-height: 10px;
+  }
+  main .left_side {
+    display: none;
   }
 }
