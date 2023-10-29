@@ -40,16 +40,19 @@ main .title_hp {
   font-size: 1.5em;
 }
 
-
 main .row .text_justify {
   text-align: justify;
 }
 
 main button {
-  background-color: #f8ce69;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 167, 119, 1) 0%,
+    rgba(164, 28, 12, 1) 100%
+  );
   border: 2px solid goldenrod;
   border-radius: 60px;
-  color: rgb(104, 76, 4);
+  color: rgb(255, 255, 255);
   width: 150px;
   height: 50px;
   margin-bottom: 15px;

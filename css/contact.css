@@ -63,6 +63,13 @@ main .left_side {
   font-size: 1.2em;
 }
 
+main .left_side img{
+  max-width: 25%;
+  border-radius: 15px;
+  box-shadow:0px 0px 33px 10px #460a0a ;
+
+}
+
 main button {
   background-color: #f8ce69;
   border: 2px solid goldenrod;
